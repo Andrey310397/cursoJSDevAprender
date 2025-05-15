@@ -1,7 +1,9 @@
-// let idade = 5;
-// console.log(idade)
+// Crie um algoritmo que imprima 3 variáveis diferentes.
 
-// let nome = 'Andrey'
-// console.log(nome)
+let number = 1;
+let name = 'Carlos'
+let price = 34.90
 
-// camelCase -> Forma de como declarar a variável da maneira correta
+console.log(number)
+console.log(name)
+console.log(price)
