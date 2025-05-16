@@ -1,10 +1,4 @@
-// Objetos -> Irá juntar informações em um lugar só que tem como acessar pela propriedade daquele objeto
-
-let nome = 'Rafael';
-let idade = 25;
-let estaAprovado = true;
-let sobrenome = undefined;
-let corSelecionado = null;
+// Criar 3 propriedades e exibir no console
 
 //Objeto
 let pessoa = {
@@ -12,7 +6,10 @@ let pessoa = {
     nome: 'Rafael',
     idade: 25,
     estaAprovado: true,
-    sobrenome: 'de souza'
+    sobrenome: 'de souza',
+    nomeMae: 'Jurema',
+    nomePai: 'Jorge',
+    somaIdadePais: 124
 };
 
 console.log(pessoa);
