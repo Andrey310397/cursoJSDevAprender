@@ -1,15 +1,9 @@
-// Criar 3 propriedades e exibir no console
+//arrays -> É um conjunto de dados que pode ser acessado por um índice
+// Um índice é uma posição exata de onde se encontra esse tipo de informação.
 
-//Objeto
-let pessoa = {
-    //Key  Value
-    nome: 'Rafael',
-    idade: 25,
-    estaAprovado: true,
-    sobrenome: 'de souza',
-    nomeMae: 'Jurema',
-    nomePai: 'Jorge',
-    somaIdadePais: 124
-};
+// Estrutura arrays
+//            Indice começando sempre por 0
+let familia = [true, 45, 'jhonatan', 17];
 
-console.log(pessoa);
+console.log(familia.length);
+console.log(familia[0]);
