@@ -1,15 +1,13 @@
 // Criar uma função que altere qualquer coisa
 
-let nome = 'Andrey';
+let tela = 'tela1';
 
-function alteraNome() {
-    alterar = prompt('Digite o nome que você gostaria de ter');
+function resetaTela(nTela, cor) {
+    tela = nTela + ' ' + cor;
+};
 
-    nome = alterar;
-}
+console.log(tela);
 
-console.log('Seu nome é ' + nome);
+resetaTela('tela2', 'preta');
 
-alteraNome();
-
-console.log('Porém, você queria se chamar ' + nome)
+console.log(tela)
