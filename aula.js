@@ -1,18 +1,7 @@
-// Tipos de funçoes
-// Função que realiza uma tarefa e não devolve nada
-function dizer() {
-    console.log('Jhonatan');
-}
+let idade = Number(prompt('Digite a sua idade'));
 
-dizer();
+let carteiraTrabalho = prompt('Possui carteira de trabalho?').toUpperCase();
 
-// função que realiza uma tarefa e devolve um resultado
-function multiplicarPorDois(valor) {
-    return valor * 2;
-}
+let podeAplicar = carteiraTrabalho === 'SIM' && idade >= 18 ? 'Pode aplicar' : 'Não pode aplicar';
 
-// console.log(multiplicarPorDois(5));
-
-let resultado = multiplicarPorDois(5);
-
-console.log(resultado);
+console.log(podeAplicar)
