@@ -1,13 +1,18 @@
-// Criar uma função que altere qualquer coisa
+// Tipos de funçoes
+// Função que realiza uma tarefa e não devolve nada
+function dizer() {
+    console.log('Jhonatan');
+}
 
-let tela = 'tela1';
+dizer();
 
-function resetaTela(nTela, cor) {
-    tela = nTela + ' ' + cor;
-};
+// função que realiza uma tarefa e devolve um resultado
+function multiplicarPorDois(valor) {
+    return valor * 2;
+}
 
-console.log(tela);
+// console.log(multiplicarPorDois(5));
 
-resetaTela('tela2', 'preta');
+let resultado = multiplicarPorDois(5);
 
-console.log(tela)
+console.log(resultado);
