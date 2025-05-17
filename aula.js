@@ -1,7 +1,15 @@
-let idade = Number(prompt('Digite a sua idade'));
+// Mini projeto - Trocando valor de variáveis
+let a = 'vermelho';
+let b = 'azul';
 
-let carteiraTrabalho = prompt('Possui carteira de trabalho?').toUpperCase();
+console.log('Antes da troca:');
+console.log(a);
+console.log(b);
 
-let podeAplicar = carteiraTrabalho === 'SIM' && idade >= 18 ? 'Pode aplicar' : 'Não pode aplicar';
+let temp = a;
+a = b;
+b = temp;
 
-console.log(podeAplicar)
+console.log('\nDepois da troca:')
+console.log('a: ', a)
+console.log('b: ', b)
