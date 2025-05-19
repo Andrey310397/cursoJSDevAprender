@@ -32,17 +32,24 @@
 // ----------------------------------------------------
 
 // for..in loop
-const pessoa = {
-    nome: 'Andrey',
-    idade: 25
-};
+// const pessoa = {
+//     nome: 'Andrey',
+//     idade: 25
+// };
 
-for (let chave in pessoa) {
-    console.log(chave, pessoa.nome);
-}
+// for (let chave in pessoa) {
+//     console.log(chave, pessoa.nome);
+// }
 
 const cores = ['vermelho', 'azul', 'verde'];
 
-for (let indice in cores) {
-    console.log(indice, cores[indice]);
+// for (let indice in cores) {
+//     console.log(indice, cores[indice]);
+// }
+
+// ----------------------------------------------------
+
+// for..of loop
+for (let cor of cores) {
+    console.log(cor);
 }
