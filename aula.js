@@ -1,15 +1,11 @@
-// Mini projeto - Trocando valor de variáveis
-let a = 'vermelho';
-let b = 'azul';
+// Condicionais - If .. Else
 
-console.log('Antes da troca:');
-console.log(a);
-console.log(b);
+let hora = 13
 
-let temp = a;
-a = b;
-b = temp;
-
-console.log('\nDepois da troca:')
-console.log('a: ', a)
-console.log('b: ', b)
+if (hora > 6 && hora < 12) {
+    console.log('Bom dia');
+} else if (hora > 12 && hora < 18) {
+    console.log('Boa tarde');
+} else {
+    console.log('Boa noite');
+}
