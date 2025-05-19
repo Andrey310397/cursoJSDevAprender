@@ -1,55 +1,17 @@
-// Laço for
+// Mini projeto - Máximo entre dois valores
+// Escrever uma função que use dois números e retorna o maior entre eles
 
-// for (let i = 0; i <= 5; i++) {
-//     if (i % 2 !== 0) {
-//         console.log(i);
-//     }
-// }
+function maior() {
+    let n1 = 2;
+    let n2 = 2;
 
-// ----------------------------------------------------
-
-// While loop
-
-// let i = 5;
-
-// while (i >= 1) {
-//     if (i % 2 !== 0) {
-//         console.log(i);
-//     }
-//     i--;
-// }
-
-// ----------------------------------------------------
-
-// Do..While loop
-
-// let i = 0;
-// do {
-//     console.log('digitando', i);
-//     i++;
-// } while (i <= 10)
-
-// ----------------------------------------------------
-
-// for..in loop
-// const pessoa = {
-//     nome: 'Andrey',
-//     idade: 25
-// };
-
-// for (let chave in pessoa) {
-//     console.log(chave, pessoa.nome);
-// }
-
-const cores = ['vermelho', 'azul', 'verde'];
-
-// for (let indice in cores) {
-//     console.log(indice, cores[indice]);
-// }
-
-// ----------------------------------------------------
-
-// for..of loop
-for (let cor of cores) {
-    console.log(cor);
+    if (n1 > n2) {
+        console.log(n1);
+    } else if (n2 > n1) {
+        console.log(n2);
+    } else {
+        console.log('Os valores são iguais.')
+    }
 }
+
+maior();
