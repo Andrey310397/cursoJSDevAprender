@@ -1,17 +1,7 @@
-// Switch case
-let permissao = 'diretor'; // comum, gerente, diretor
+// Laço for
 
-switch (permissao) {
-    case 'comum':
-        console.log('usuário comum');
-        break;
-    case 'gerente':
-        console.log('usuário gerente');
-        break;
-    case 'diretor':
-        console.log('usuário diretor');
-        break;
-
-    default:
-        console.log('Usuário não reconhecido!');
+for (let i = 0; i <= 5; i++) {
+    if (i % 2 !== 0) {
+        console.log(i);
+    }
 }
