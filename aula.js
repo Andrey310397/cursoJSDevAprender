@@ -1,24 +1,30 @@
-// Mini projeto - FizBuzz
+// Mini projeto - Medidor de velocidade
+// Velocidade máxima de 70km - Ok
+// A cada 5km ganha 1 ponto na carteira
+// Precisará usar a função Math.Floor()
+// Caso pontos maior que 12 -> Carteira Suspensa
+verificarVelocidade(80);
 
-//Divísil por 3 => Fizz
-//Divísil por 5 => Buzz
-//Divísil por 3 e 5 => FizzBuzz
-//Não Divísil por 3 ou 5 => Entrada
-//Não é um número => Não é um número
-const resultado = fizzBuzz(15);
+function verificarVelocidade(velocidade) {
+    const velocidadeMaxima = 70;
+    const kmPorPonto = 5;
 
-function fizzBuzz(entrada) {
-    if (typeof entrada !== 'number') {
-        console.log('Não é um número');
-    }
+    if (velocidade <= velocidadeMaxima) {
+        console.log('Velocidade: ' + velocidade + ' km/h');
+        console.log('Status: Ok');
 
-    if (entrada % 3 === 0 && entrada % 5 === 0) {
-        console.log('FizzBuzz');
-    } else if (entrada % 3 === 0) {
-        console.log('Fizz');
-    } else if (entrada % 5 === 0) {
-        console.log('Buzz');
+        console.log('Pontos: 0');
     } else {
-        console.log('entrada');
+        const excessoVelocidade = velocidade - velocidadeMaxima;
+
+        let pontos = Math.floor(excessoVelocidade / kmPorPonto);
+
+        console.log('Velocidade: ' + velocidade + ' km/h');
+        console.log('Status: Acima da velocidade');
+        console.log('Pontos: ' + pontos);
+
+        if (pontos >= 12) {
+            console.log('Carteira Suspensa');
+        }
     }
 }
