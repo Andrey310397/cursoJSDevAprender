@@ -1,17 +1,24 @@
-// Mini projeto - Máximo entre dois valores
-// Escrever uma função que use dois números e retorna o maior entre eles
+// Mini projeto - FizBuzz
 
-function maior() {
-    let n1 = 2;
-    let n2 = 2;
+//Divísil por 3 => Fizz
+//Divísil por 5 => Buzz
+//Divísil por 3 e 5 => FizzBuzz
+//Não Divísil por 3 ou 5 => Entrada
+//Não é um número => Não é um número
+const resultado = fizzBuzz(15);
 
-    if (n1 > n2) {
-        console.log(n1);
-    } else if (n2 > n1) {
-        console.log(n2);
+function fizzBuzz(entrada) {
+    if (typeof entrada !== 'number') {
+        console.log('Não é um número');
+    }
+
+    if (entrada % 3 === 0 && entrada % 5 === 0) {
+        console.log('FizzBuzz');
+    } else if (entrada % 3 === 0) {
+        console.log('Fizz');
+    } else if (entrada % 5 === 0) {
+        console.log('Buzz');
     } else {
-        console.log('Os valores são iguais.')
+        console.log('entrada');
     }
 }
-
-maior();
