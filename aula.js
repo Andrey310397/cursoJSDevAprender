@@ -1,14 +1,19 @@
-// Mini projeto - Par ou impar
-// Função exibe se cada valor é par ou impar
+// Mini projeto - Encontre o String
+// exibir somente as propriedades do tipo string que estão nesse objeto
 
-exibirTipo(5);
+const filme = {
+    titulo: 'Vingadores',
+    ano: 2008,
+    diretor: 'Robin',
+    personagem: 'Thor'
+}
 
-function exibirTipo(limite) {
-    for (let i = 0; i <= limite; i++) {
-        if (i % 2 === 0) {
-            console.log(i, 'Par');
-        } else {
-            console.log(i, 'Impar');
+exibirPropriedades(filme);
+
+function exibirPropriedades(obj) {
+    for (let chave in obj) {
+        if (typeof obj[chave] === 'string') {
+            console.log(chave, obj[chave]);
         }
     }
 }
